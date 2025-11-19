@@ -1,7 +1,7 @@
-.jpg
-.jpeg
-.xlsx
-.csv
-.png
-.zip
-.rar
+*.jpg
+*.jpeg
+*.xlsx
+*.csv
+*.png
+*.zip
+*.rar
