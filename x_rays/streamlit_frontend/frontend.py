@@ -9,7 +9,20 @@ import requests
 
 # with open("images/hero-image.png", "rb") as f:
 #     data = base64.b64encode(f.read()).decode()
-    
+
+def print_tree(path, prefix=""):
+    items = sorted(os.listdir(path))
+    for index, item in enumerate(items):
+        full_path = os.path.join(path, item)
+        connector = "└── " if index == len(items) - 1 else "├── "
+        st.write(prefix + connector + item)
+        if os.path.isdir(full_path):
+            new_prefix = prefix + ("    " if index == len(items) - 1 else "│   ")
+            print_tree(full_path, new_prefix)
+
+st.write("Root folder:", os.getcwd())
+print_tree(os.getcwd())
+
 def request_prediction(uri, uploaded_file):
 
     # The file you want to send
