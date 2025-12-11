@@ -57,7 +57,7 @@ st.markdown(
 
 
 
-st.image( "/home/adminuser/x_rays/streamlit_frontend/images/hero-image.png")
+st.image( "/home/elias-yuri-maximo/x_rays/streamlit_frontend/images/hero-image.png")
 
 
 # --- Header ---
