@@ -6,6 +6,7 @@ from io import BytesIO
 import base64
 import utils
 import requests
+import os
 
 # with open("images/hero-image.png", "rb") as f:
 #     data = base64.b64encode(f.read()).decode()
