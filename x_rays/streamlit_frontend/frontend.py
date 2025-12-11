@@ -7,8 +7,8 @@ import base64
 import utils
 import requests
 
-with open("images/hero-image.png", "rb") as f:
-    data = base64.b64encode(f.read()).decode()
+# with open("images/hero-image.png", "rb") as f:
+#     data = base64.b64encode(f.read()).decode()
     
 def request_prediction(uri, uploaded_file):
 
@@ -57,7 +57,7 @@ st.markdown(
 
 
 
-st.image( "images/hero-image.png")
+st.image( "x_rays/streamlit_frontend/images/hero-image.png")
 
 
 # --- Header ---
